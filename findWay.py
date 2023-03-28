@@ -1,7 +1,6 @@
 import pandas as pd
 from utils import Euclidean
 import ast
-from algorithm import astar
 
 map = pd.read_excel("map350_040122_X.xlsx")
 nodes = []
@@ -84,4 +83,3 @@ for node1 in d:
 for i in vertexes:
     print(i + " " + str(vertexes[i]))
 
-astar([2, 0],[5, 0],vertexes)
